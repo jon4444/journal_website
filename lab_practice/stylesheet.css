@@ -1,0 +1,456 @@
+/*---------------------------
+Base styles for all screen widths
+----------------------------*/
+* {box-sizing: border-box;}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	font-size: 100%;/*16px=1em*/
+	line-height: 1.2;
+}
+
+#wrapper
+{
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1;
+}
+
+h1 { font-size: 2.25em; } /* 36px */
+h2 { font-size: 1.75em; } /* 28px */
+h3 { font-size: 1.375em; } /* 22px */
+h4 { font-size: 1.125em; } /* 18px */
+h5 { font-size: 1em; } /* 16px */
+h6 { font-size: .875em; } /* 14px */
+
+#indexbanner {
+	line-height: 1;
+	font-size: 2.25em;
+	color: darkcyan;
+}
+
+#indexbanner2 {
+	line-height: 1;
+	font-size: 1.75em;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+p
+{
+	line-height: 1.5;
+}
+
+code {
+	color: red;
+}
+
+small	{
+	font-size: .75em; /* 12px*/
+}
+
+blockquote
+{
+	padding: 1em 2em 1em 2em;
+	margin: 0 0 2em 0;
+	border-left: 5px solid #eee;
+}
+
+table
+{
+	margin-right: 3em;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	max-width: 35em;
+}
+
+/**The nth child pseudo-class selects every odd row of the table to apply a background colour
+*Reference - https://developer.mozilla.org/en-US/docs/Web/CSS/%3Anth-child
+*/
+tbody tr:nth-child(odd) {
+	background-color: rgba(204, 0, 0, .1);
+}
+
+th, td
+{
+	font-size: 90%;
+	padding: .2em 1em .2em 1em;
+	border: 1px solid #ddd;
+	vertical-align: top;
+	text-align: left;
+	white-space: nowrap;
+}
+
+td:empty {
+	background-image: url(images/td_pattern.png);
+	background-repeat: repeat;
+}
+
+caption	{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1.2em 0 .5em 0;
+	text-transform: uppercase;
+}
+
+a	{ text-decoration: none; }
+	
+a:link { color: #C00; }
+a:visited { color: #990000; }
+a:hover { 
+	color: #3300FF;
+	text-decoration:underline;
+}
+a:active { color: #336; }
+a:focus { color: #336; }
+
+a[href^="#top"] {
+	font-size: .75em;
+	background: url(../learningJournal/images/up.png) no-repeat left bottom;
+	padding-left: 1.4em;
+}
+
+footer a:link { color: #fff; }
+
+/* -----------------------
+Grid layout
+------------------------*/
+
+.banner {
+	grid-area: banner;
+
+}
+/**.banner-clipped {
+	overflow: hidden;
+  }**/
+
+.banner-fluid {
+	width: 100%;
+	max-width: 900px; /*max-width measurement should be the actual width of your image*/
+	
+}
+
+.menu {
+	grid-area: menu;
+}
+
+nav {
+	grid-area: nav;
+}
+
+table {
+	grid-area: table;
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+
+#wrapper {
+	display: grid;
+	grid-gap: 0;
+	grid-template-areas:
+		"banner"
+		"menu"
+		"nav"
+		"table"
+		"main"
+		"aside"
+		"footer";
+}
+
+@media (min-width: 50em) {
+  #wrapper {
+    grid-template-columns: 3fr 6fr;
+    grid-template-areas: 
+      "banner  banner"
+      "menu  menu"
+	  "nav  table"
+      "aside  main"
+      "footer  footer";
+  }
+}
+
+@media (min-width: 60em) {
+  #wrapper {
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-areas: 
+      "banner  banner  banner"
+      "menu  menu  menu"
+	  "nav  table  aside"
+      "nav  main  aside"
+      "footer  footer  footer";
+   }
+}
+
+/* --------------------------
+Layout Styles - mobile first
+----------------------------*/
+.banner
+{
+	color: #fff;
+	background: #555;
+	padding: 1em  1.25em 1em 1.25em;
+	background-image:url(Banner_Phoenix_16x9.jpg);
+		background-repeat: no-repeat;
+			background-size: cover;    
+    background-position: center; 
+
+
+}
+
+.menu
+{
+	background: #000 ;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav h3, aside h3 {
+	margin-left: auto;
+}
+
+.weekly ul, .weekly h3 {
+	margin-left: 0;
+	padding: 0;
+}
+
+#foo ul {
+	padding-inline-start: 10px;
+}
+
+main
+{
+	margin: 0 1em 0 1em;
+}
+
+footer
+{
+	color: #fff;
+	background: #555;
+	padding: 1em 1.25em 1em 1.25em;
+	
+}
+
+/**Makes images 100% width of containing element i.e. flexible
+*Remove image width and height attributes from html!
+*/
+img	
+{
+	max-width: 100%;
+}
+
+/* -----------------------------------------------
+Menu Navigation - vertical layout for smaller screens
+--------------------------------------------------*/
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu li
+{
+	display: block; /*display in a vertical column*/
+	margin: 0;
+}
+.menu a
+{
+	display: block;
+	padding: .7em 1.25em .7em 1.25em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid gray;
+}
+.menu a:link { color: #fff; }
+.menu a:visited { color: #DFDFDF; }
+.menu a:focus { color: #C00; }
+.menu a:hover { color: #DFDFDF; }
+.menu a:active { color: #C00; }
+
+/* ----------------------------------------------------
+Wider screens - i.e. desktop, laptop, tablet landscape
+-------------------------------------------------------*/
+
+@media (min-width: 50em)
+{
+	.banner { padding: 0 0 0 3em; }
+	
+/* Menu navigation - inline layout for wider screens */	
+	
+	.menu { padding: 1em 0 1em 3em; }
+
+	.menu li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}
+	.menu a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}
+}
+
+/* ----------------------------------------------------
+Mobile screens - portrait
+-------------------------------------------------------*/
+/*Timtable not displayed on small width screens*/
+
+@media (max-width: 35em) {
+	table {
+		display:none;
+   }
+}
+
+/*float/clear classes */
+.fltrt {  /* this class can be used to float an element e.g. image right in the page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: .5em;
+}
+.fltlt { /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: .5em;
+}
+.clear { /* this class can be placed on an element or empty div as the final element following the last floated div */
+	clear: both;
+}
+
+
+/*-----------------------------------------------
+the css for the CONTACT PAGE 
+--------------------------------------------------*/
+
+label {display: block;}
+input {display: block;}
+
+#conheader {
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#conheader2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper1 {
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40em;
+}
+
+textarea {
+    width: 98%;
+    height: 120px;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-color: #FFF;
+    border: 1px solid #C00;
+}
+
+/*Form elements grouped and styled as related blocks of data*/
+fieldset {
+    border: 1px solid #56562c;
+    margin-bottom: 1.2em;
+    padding: .6em .6em .7em .6em;
+}
+
+/*This defines the container div for the form elements*/
+form {
+    width: 80%;
+	background-color: #FFF;
+	padding: .7em;
+	border: 3px groove #56562C;
+	margin: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #686261;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 16px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+/*-----------------------------------------------
+the css for the TUTORIAL PAGE 
+--------------------------------------------------*/
+
+p {
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+    font-size: normal;
+
+}
