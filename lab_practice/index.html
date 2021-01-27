@@ -1,0 +1,484 @@
+<!doctype html>
+<!--HTML5 doctype declaration -->
+<html lang="en">
+<!--default language of the document content -->
+
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--the stylesheets-->
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<!--link for the fonts-->
+	<link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+
+<!--the favicon link-->
+<link rel="shortcut icon" type="image/ico" href="favicon_colorful.ico">
+
+
+	
+	<!--character encoding for the document (Unicode) -->
+	<title>Learning Journal template</title>
+	<!--web page title -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background-color:#FAF6D4;">
+
+
+<a id="top"></a>
+<!--Markup all web page content inside the 'body' tags -->
+<div id="wrapper">
+	
+
+	<!--The 'wrapper' contains all the page content-->
+
+	<header class="banner">
+		<!--The main heading for the page -->
+		<h1 id="indexbanner">Learning Journal</h1>
+		<h2 id="indexbanner2">Lab Tutorial</h2>
+	</header>
+
+	<!--The Navigation Bar-->
+	<nav class="menu">
+		<!--The primary navigation for the page -->
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="tutorial.html">Guide</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+
+	<nav>
+		<h3>The Weekly Post</h3>
+		<ul>
+			<!--Nest unordered list-->
+			<li><a href="#week1">Week 1</a></li>
+			<li><a href="#week2">Week 2</a></li>
+			<li><a href="#week3">Week 3</a></li>
+			<li><a href="#week4">Week 4</a></li>
+			<li><a href="#week5">Week 5</a></li>
+			<li><a href="#week6">Week 6</a></li>
+			<li><a href="#week7">Week 7</a></li>
+			<li><a href="#week8">Week 8</a></li>
+			<li><a href="#week9">Week 9</a></li>
+
+		</ul>
+	</nav>			
+
+
+<!--The Weekly Timetable-->
+	<table>
+		<caption>My Timetable</caption>
+			<tr>
+				<th>Day/time</th>
+	            <th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+			</tr>
+			<tr>
+				<td>9-10am</td>
+				<td>CI404 lecture</td>
+				<td>CI405 lab</td>
+				<td>CI435 lab</td>
+			</tr>
+			<tr>
+				<td>10-11am</td>
+				<td>CI401 lecture</td>
+				<td>CI404 lab </td>
+				<td>CI453 tutorial</td>
+			</tr>
+			<tr>
+				<td>11-12pm</td>
+				<td></td>
+				<td>CI404 lab</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>12-1pm</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>1-2pm</td>
+				<td></td>
+				<td>CI435 lecture</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2-3pm</td>
+				<td>CI453 lecture</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3-4pm</td>
+				<td>CI402 lecture</td>
+				<td>CI401 seminar</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4-5pm</td>
+				<td>CI401 lecture</td>
+				<td>CI401 seminar</td>
+				<td></td>
+			</tr>
+		</table>
+
+				<!--The main page content -->
+	<main>
+		<h2>Weekly Posts</h2>
+
+		<article>
+			<header class="post">
+				<h3><a id="week1"></a>Week 1: Getting started</h3>
+				<!--Week 1-->
+				<p> Published on <time datetime="2019-10-03"><strong>October 3, 2019</strong></time></p>
+			</header>
+			<p>During the first week of web design tutorials, I went through a step by step guide for how to create a
+				basic HTML website.
+				The major ones included learning the difference between relative and absolute links, and appplying that
+				when creating the links
+				needed for what im working on. </p>       
+
+			<p>I learned to: </p>
+			<ul>
+				<!--Nest unordered list-->
+				<li>Set up a folder for my website on my Brighton Domains workspace</li>
+				<li>Link two pages together with a navigation menu using a relative link</li>
+				<li>Create links to external websites using an absolute link</li>
+				<li>Use <code>h1</code> and <code>h2</code> tags</li>
+				<li>Validate HTML using the W3C validator</li> 
+			</ul>
+
+
+
+			<p>Some reference here to my own reading and research, explaining what I have done and what I have learned
+				from it.</p>
+
+			<header class="post">
+				<h3><a id="week2"></a>Week 2 - Learning more tags</h3> <!-- Week 2-->
+				<p> Published on <time datetime="2019-10-03"><strong>October 6, 2019</strong></time></p>
+				<!-- publication date-->
+			</header>
+
+			<p>The W3C defines HTML and CSS as follows:</p>
+
+			    <blockquote>
+					<p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for
+					building Web pages. HTML provides the structure of the page, CSS the (visual) layout,
+					for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web
+					pages...</p>
+
+					<footer><cite><a href="http://www.w3.org/standards/webdesign/htmlcss">W3C standards for web design</a></cite></footer>
+				</blockquote>
+
+				
+
+			<ul>
+				   <li> Add a publication to my post </li>
+				   <li> Include a list to a post </li>
+				   <li> Use an anchor <code>a</code> to create navigations to posts using my knowledge of absolute and
+					relative links </li>
+				<li> Add an <code>img</code> tag to add an image to the webpage</li>
+			    
+			</ul>
+
+			<header class="post">
+				<h3><a id="week3"></a>Week 3: More HTML markup</h3>
+				<!--Week 3-->
+				<p>Published on <time datetime="2019-10-03"><strong>October 6, 2019</strong></time></p>
+				<!--publication date-->
+			</header>
+			<p>I learned to:</p>
+			<ul>
+				   <!--Nest unordered list-->
+				   <li>More lists</li>
+				   <li>Add a table to your learning Journal</li>
+				   <li>Quoting text</li>
+				   <li>Make an image into a link</li>
+			    
+			</ul>
+        <dl>
+			<!--Description list -->
+		<dt><strong>HTML</strong></dt>
+			<dd>Hyper-text markup language - the <i>lingua franca</i> of the web</dd>
+		<dt><strong>CSS</strong></dt>
+			<dd>Cascading stylesheets - used to tell browsers how to display HTML elements</dd>
+		<dt><strong>JavaScript</strong></dt>
+			<dd>Scripting language for adding interactive behaviour to web pages</dd>
+		</dl>
+
+		<blockquote>
+
+				<div class="fltlt">
+					<a href="http://www.w3.org/html/logo/">
+		
+						<img src="HTML5_Logo_256.png" alt="HTML5 logo" /></a>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus et hendrerit consequat, ante lectus 
+						porttitor tellus, eget blandit urna nibh a metus.
+					The W3C has made an HTML5 logo that you can add to your web page. The HTML5 logo is licensed under Creative
+					Commons Attribution 3.0 — so it is free to use.
+					HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for
+					building Web pages. HTML provides the structure of the page, CSS the (visual) layout,
+					for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web
+					pages...
+		
+				</p>
+				<p><a href="#top">Go to top</a></p>
+			
+			</blockquote>		
+
+			<header class="post">
+				<h3><a id="week4"></a>Week 4: CSS basics</h3>
+				<!--Week 4-->
+				<p>Published on <time datetime="2019-10-03"><strong>October 6, 2019</strong></time></p>
+				<!--publication date-->
+			</header>
+			<p>I learned to:</p>
+			<ul>
+					<li>Copy stylesheet.css to the webpages</li>
+					<li>Style the body element</li>
+					<li>Style the other elements</li>
+					<li>Validate the css stylesheet</li>
+			</ul>
+			<p>
+				A basic stylesheet template <code>normalize.css</code> was provided for us to copy into our own css file. I placed the link to 
+				the stylesheet <code>(link href="css/normalize.css" rel="stylesheet")
+				</code> within the <code>head</code> tags along with the <code>stylesheet</code> link <code>(link href="css/stylesheet" rel="stylesheet")</code>.
+				<br>
+				Selectors were also added to match the element tags located in the HTML doc. Later in the tutorial, I styled the navigation menu 
+				containing the Home, Tutorial and Contact by giving the <code>nav</code> element a class <code>"menu"</code>. This would make it easier to target
+				this element in the CSS.  
+				<br>
+				<br>
+				So the <code>nav</code> in the HTML doc would be <code>(nav class="menu")</code> while the CSS target would become <code>.menu li</code> 
+				or <code>.menu a</code> depending on the style we're after. 
+			</p>
+
+
+			<header class="post">
+				<h3><a id="week5"></a>Week 5: CSS: styling text</h3>
+				<!--Week 5-->
+				<p>Published on <time datetime="2019-10-03"><strong>October 25, 2019</strong></time></p>
+				<!--publication date-->
+			</header>
+			<p>I learned to:</p>
+			<ul>			
+					<li>Specify the font-family</li>
+					<li>Use webfonts</li>
+					<li>Style the paragraphs</li>
+					<li>Float an image and wrap the text around it</li>
+			</ul>
+			<p>
+				In this tutorial I added custom fonts to the HTML doc in order to make it more attractive or original. The stock fonts available for use where the usual arial 
+				or verdana serif fonts.I proceeded to use google fonts from the following link <a href="https://www.google.com/fonts">https://www.google.com/fonts</a>. 
+				Then I went ahead and placed the it in the head of the document. This is an example of what the link would looklike in the head: <code>(link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet")</code>. 
+				Succeeding this, I went on to specify some other features of the elements like the line-heights, font-sizes and margins of the paragraphs. 
+
+			</p>
+			
+
+
+			<header class="post">
+					<h3><a id="week6"></a>Week 6: Making the Learning Journal page responsive</h3>
+					<!--Week 6-->
+					<p>Published on <time datetime="2019-10-03"><strong>October 26, 2019</strong></time></p>
+					<!--publication date-->
+				</header>
+				<p>I learned to:</p>
+				<ul>			
+					<!--Nest unordered list-->
+						<li>Added a <code>viewport meta</code> element to the <code>head</code> of the document</li>
+						<li>Organised the stylesheet</li>
+						<li>A responsive grid was setup</li>
+						<li>Styled a small screen layout</li>
+						<li>Added media queries</li>
+						<li>Hiding elements <code>display:none</code></li>
+				</ul>
+				<p>
+					In order to make the webpage i just created act like a normal desktop page and dusplay the contents in full width, I added this line of code into the head:
+					<code>(meta name="viewport" content="width=device-width, initial-scale=1")</code>. Following this,  adjusted the order of HTML elements and reorganised the 
+					sections of the stylesheet for easier layout. Firstly I added a base style layout which would be applied to all the screens and webpages. Next is the Grid layout 
+					which was applied to only the Learning Journal Page. Now this layout contained a grid of 3 columns below the banner, <code> nav, table, main, aside and footer</code>.
+					These areas just mentioned are the content areas but I hadn't created the layout yet. If this webpage is opened on a mobile device, the nabvigation menu would resemble a vertical menu, 
+					and the reason for this is because in the <code>.menu</code> target in the css, it contains <code>display: block;</code> to display it in a vertical column. While for the banner,
+					<code>display: inline;</code> styles a horizontal menu for bigger and wider screens. 
+				</p>
+				<p><a href="#top">Go to top</a></p>
+
+			
+				<figure><img src="learning_journal_screenshot.png" alt="Learning Journal screenshot">
+					<figcaption> <strong>Learning Journal Screenshot</strong>
+						<small>Screenshot & copy; John Kola-Fabiyi</small>
+						</figcaption>
+						</figure>
+
+				
+
+
+				<header class="post">
+					<h3><a id="week7"></a>Week 7: Flexible media</h3>
+					<!--Week 7-->
+					<p>Published on <time datetime="2019-10-03"><strong>October 26, 2019</strong></time></p>
+					<!--publication date-->
+				</header>
+				<p>I learned to:</p>
+				<ul>			
+					<!--Unordered list-->
+						<li>Clip full-size images</li>
+						<li>Text wrap those flexible images</li>
+				</ul>
+				<p><a href="#top">Go to top</a></p>
+
+
+				<figure><img src="banner_screenshot.png" alt="banner screenshot">
+					<figcaption> <strong>Banner screenshot</strong>
+						<small>Screenshot & copy; John Kola-Fabiyi</small>
+						</figcaption>
+						</figure>
+
+				<header class="post">
+					<h3><a id="week8"></a>Week 8: Extra Images</h3>
+					<!--Week 8-->
+					<p>Published on <time datetime="2019-11-21"><strong>November 21, 2019</strong></time></p>
+					<!--publication date-->
+				</header>
+				<p>I learned to:</p>
+				<ul>
+					<li>Apply and edit background images for the webpage</li>
+					<li>Create and apply favicons for the webpage</li>
+				</ul>		
+				<p><a href="#top">Go to top</a></p>
+
+
+				<header class="post">
+						<h3><a id="week9"></a>Week 9: HTML & CSS Forms</h3>
+						<!--Week 8-->
+						<p>Published on <time datetime="2019-11-25"><strong>November 25, 2019</strong></time></p>
+						<!--publication date-->
+					</header>
+					<p>I learned to:</p>
+					<ul>
+						<li>Insert a form on a webpage</li>
+						<li>Add form elements to the contact form; text input elements, text-area, fieldset and radio group</li>
+						<li>Enhancing forms with HTML5 input types and other features</li>
+						<li>Validate HTML5 forms</li>
+					</ul>	
+
+					<figure><img src="html_forms.png" alt="form screenshot">
+						<figcaption> <strong>HTML form</strong>
+							<small>Screenshot & copy; John Kola-Fabiyi</small>
+							</figcaption>
+							</figure>
+					<p>
+						I applied a <code>fieldset</code> tag in order to make a container for the area required for the user to input their contact details. 
+						Enclosed in these tags was the <code>legend</code> tag which represents the caption for this <code>fieldset</code> container. Following these 
+						tags was the <code>label</code> tags embedded within the <code>fieldset</code> to label the textboxes requiring the user to enter their details. 
+					</p>
+
+					<figure><img src="form_code_screenshot.png" alt="form code screenshot">
+						<figcaption> <strong>HTML form source code</strong>
+							<small>Screenshot & copy; John Kola-Fabiyi</small>
+							</figcaption>
+							</figure>
+
+					<p>
+						Below the section of the form where the user details are entered, there is also a <code>textarea</code> tag added for the text area. This is where
+						the user enters additional comments. The <code>textarea</code> also has an id attribute <code>message</code>.  
+
+						<figure><img src="textarea_screenshot.png" alt="textarea code screenshot">
+							<figcaption> <strong>Text area source code</strong>
+								<small>Screenshot & copy; John Kola-Fabiyi</small>
+								</figcaption>
+								</figure>
+							<!--post ends-->
+		</article>
+
+
+
+
+	</main>
+	<!--Close main page content -->
+
+<!--The References-->
+	<aside>
+
+		<a id="refs"></a>
+
+		<h3>References</h3>
+
+		<ol>
+				<li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
+				<li><a href="http://html5doctor.com/">HTML5 Doctor - helping you implement HTML5 today</a></li>
+				<li><a href="http://www.w3.org/TR/html-markup/dl.html">W3C description lists</a></li>
+				<li><a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons license</a></li>
+				<li>Brad Frost - <a href="http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/">7 Habits of Highly Effective Media Queries</a></li>
+				<li><a href="http://mobiletest.me/">Mobile browser emulator</a></li>
+		<li><a href="https://developers.google.com/web/tools/chrome-devtools/device-mode/">Chrome Dev Tools Device Mode</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode">Firefox Responsive Design Mode</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms">Mozilla Developer Network, HTML Forms Guide</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form">Mozilla Developer Network, My First HTML Form </a></li>
+		<li><a href="http://www.wufoo.com/2011/06/13/custom-radio-buttons-and-checkboxes/">Wuffoo.com-Custom radio buttons and checkboxes</a></li>
+		<li><a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/">webdesign.tutsplus.com</a></li>
+		<li><a href="https://css-tricks.com/examples/NiceSubmitButtons/">Submit Buttons - CSS Tricks</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Using_multi-column_layouts">Using CSS multi-column layout</a></li>
+		</ol>
+
+	</aside>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+	    <!--The page footer-->
+		<footer>
+
+			<cite>
+				<a href="http://www.w3.org/standards/webdesign/htmlcss">W3C standards for web design</a>
+			</cite>
+
+		</footer>
+
+	
+
+
+	
+	<!--The Page Footer-->
+	<footer>
+		<!--Footer content -->
+		<a href="mailto:J.Kola-Fabiyi@uni.brighton.ac.uk">Email John Kola-Fabiyi</a>
+		<small>&copy; 2019, John Kola-Fabiyi.</small>
+	</footer>
+
+</div>
+<!--Close 'wrapper' div -->
+</body>
+<!--Close 'body' -->
+
+</html>
+<!--Close 'html' -->
